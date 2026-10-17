@@ -1,5 +1,5 @@
 {
-  "name": "mdprint",
+  "name": "@ark930/mdprint",
   "version": "0.1.0",
   "description": "Markdown → PDF with mermaid diagrams, KaTeX math and CJK-friendly typography",
   "keywords": [

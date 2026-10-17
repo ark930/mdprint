@@ -3,7 +3,7 @@
 Markdown → PDF from the command line, with **mermaid diagrams**, **KaTeX math**, and typography that works for Chinese as well as English.
 
 ```bash
-npm install -g mdprint
+npm install -g @ark930/mdprint
 mdprint docs/*.md -o pdf/
 ```
 
@@ -12,7 +12,7 @@ Built on [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf) and puppeteer. 
 ## Install
 
 ```bash
-npm install -g mdprint
+npm install -g @ark930/mdprint
 ```
 
 mdprint renders with a headless Chrome that puppeteer downloads during installation. Recent npm versions may skip that install script. If mdprint says it can't find Chrome, run this once:
@@ -132,7 +132,7 @@ A formula that fails to parse doesn't stop the build. mdprint prints the error a
 ## Programmatic use
 
 ```js
-const { render } = require('mdprint');
+const { render } = require('@ark930/mdprint');
 
 const results = await render(['a.md', 'b.md'], { outDir: 'pdf' });
 // [{ source, dest, ms, error? }, ...]
@@ -141,7 +141,7 @@ const results = await render(['a.md', 'b.md'], { outDir: 'pdf' });
 The md-to-pdf config on its own is at `dist/config.js`:
 
 ```bash
-md-to-pdf --config-file "$(npm root -g)/mdprint/dist/config.js" README.md
+md-to-pdf --config-file "$(npm root -g)/@ark930/mdprint/dist/config.js" README.md
 ```
 
 ## License
