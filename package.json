@@ -1,0 +1,56 @@
+{
+  "name": "mdprint",
+  "version": "0.1.0",
+  "description": "Markdown → PDF with mermaid diagrams, KaTeX math and CJK-friendly typography",
+  "keywords": [
+    "markdown",
+    "pdf",
+    "markdown-to-pdf",
+    "mermaid",
+    "katex",
+    "latex",
+    "math",
+    "cjk",
+    "chinese",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "Edwin Wang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ark930/mdprint.git"
+  },
+  "homepage": "https://github.com/ark930/mdprint#readme",
+  "bugs": {
+    "url": "https://github.com/ark930/mdprint/issues"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "mdprint": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "katex": "^0.18.10",
+    "md-to-pdf": "5.2.5",
+    "mermaid": "~9.4.3",
+    "puppeteer": "^25.14.0",
+    "serve-handler": "^6.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/serve-handler": "^6.1.4",
+    "typescript": "^7.0.2"
+  }
+}
